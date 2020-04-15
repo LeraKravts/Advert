@@ -4,7 +4,6 @@ class ColorizeMixin:
 
 
 class Advert(ColorizeMixin):
-
     def __init__(self,  mapping, price=0):
         self.price = price
         self.repr_color_code = 33
