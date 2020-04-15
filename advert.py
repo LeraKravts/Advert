@@ -1,4 +1,3 @@
-
 class ColorizeMixin:
     def __init__(self, repr_color_code):
         self.repr_color_code = repr_color_code
@@ -26,3 +25,4 @@ class Advert(ColorizeMixin):
 
     def __repr__(self):
         return f'\033[1;{self.repr_color_code};45m {self.title} | {self.price} ₽'
+    
